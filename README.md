@@ -7,6 +7,8 @@ Repository of ImageJ scripts used in image processing by the Yang Lab at the Uni
 - `Open_resize_straighten_images.ijm`: Create new tiff files from raw data that only contain a single tube.
 - `FRET_ratio_video.ijm`: Create a video of the FRET ratio signal for a single or multiple microscope positions. FRET and CFP channels needed.
 - `flip_save_avi.ijm`: Flip and save a video as an AVI file. Used after `FRET_ratio_video.ijm` to flip the video so that the temperature is increasing from left to right.
+- `combine_fret_videos.ijm`: Combine all videos belonging to the same row of a temperature experiment. Save the result as a tiff.
+- `make_montage.ijm`: Create a montage of the vertical average of a tube over time (kymograph).
 
 # Installation
 The scripts can be run using two methods:
