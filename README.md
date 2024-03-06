@@ -9,6 +9,7 @@ Repository of ImageJ scripts used in image processing by the Yang Lab at the Uni
 - `flip_save_avi.ijm`: Flip and save a video as an AVI file. Used after `FRET_ratio_video.ijm` to flip the video so that the temperature is increasing from left to right.
 - `combine_fret_videos.ijm`: Combine all videos belonging to the same row of a temperature experiment. Save the result as a tiff.
 - `make_montage.ijm`: Create a montage of the vertical average of a tube over time (kymograph).
+- `combine_tube_montages.ijm`: Combine all montages belonging to the same row of a temperature experiment. Save the result as a tiff.
 
 # Installation
 The scripts can be run using two methods:
