@@ -1,9 +1,9 @@
 // User-defined variables
-tot_pos=29;
-data_dir="D:\\Experiments\\Temperature_project\\03-01-24\\Raw_Data";
-save_dir="D:\\Experiments\\Temperature_project\\03-01-24\\Processed_Data"; // Creates this directory
-first_to_remove=351; // If not removing anything, put total_frames + 1 here
-last_to_remove=863;
+tot_pos=28;
+data_dir="D:\\Experiments\\Temperature_project\\04-12-24\\Raw_Data";
+save_dir="D:\\Experiments\\Temperature_project\\04-12-24\\Processed_Data"; // Creates this directory
+first_to_remove=550; // If not removing anything, put total_frames + 1 here
+last_to_remove=601;
 
 // Internal variables
 resize_depth=first_to_remove-1;
@@ -53,7 +53,6 @@ for (pos=0; pos<tot_pos; pos=pos+1){
 	makeLine(starting_x[pos], starting_y[pos], ending_x[pos], ending_y[pos]);
 	run("Straighten...", "title=img_BF_ line="+line_widths[pos]+" process");
 	run("Rotate 90 Degrees Left");
-	
 	run("Image Sequence... ", "dir="+save_dir+"/Pos"+pos+"/ format=TIFF digits=3");
 	close();
 	selectWindow("Pos"+pos+"_BF");
