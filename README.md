@@ -15,9 +15,9 @@ Repository of ImageJ scripts used in image processing by the Yang Lab at the Uni
 - `GlassTubeAlignment.py`: Perform multi-channel image alignment (multiStackReg) across all positions in a dataset where sample tubes moved during the experiment. The alignment process uses transformation information generated from the first channel in the provided channel list and applies it to all other channels. Users can specify input and output paths, a list of channels, and the range of frames to process. The script is implemented in Jython 2.7.2
 
 #### Before alignment
-![Sample Image](readme_images\GlassTubeAlignment\Before_GTA.jpg)
+![Sample Image](readme_images/GlassTubeAlignment/Before_GTA.jpg)
 #### After alignment
-![Sample Image2](readme_images\GlassTubeAlignment\After_GTA.jpg)
+![Sample Image2](readme_images/GlassTubeAlignment/After_GTA.jpg)
 
 
 # Installation
