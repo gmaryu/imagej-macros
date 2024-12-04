@@ -28,8 +28,7 @@ def subset_stack(stack, frame_range):
 def save_registered_stack(output_path, channel, stack, save_as_sequence):
     if save_as_sequence:
         # Save as sequence of images
-       	IJ.run("Image Sequence... ", "select=%s dir=%s format=TIFF use" % (output_path, output_path));
- 
+        IJ.run("Image Sequence... ", "select=%s dir=%s format=TIFF use" % (output_path, output_path))
     else:
         # Save as single TIFF stack
         output_file = os.path.join(output_path, "%s_registered.tif" % channel)
